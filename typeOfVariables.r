@@ -19,5 +19,11 @@ typeof(a)
 t <- TRUE
 typeof(t)
 
+t1 <- T
+typeof(t1)
+
 f <- FALSE
 typeof(f)
+
+f1 <- F
+typeof(f1)

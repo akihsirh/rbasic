@@ -11,6 +11,9 @@ z[-9]
 z[-20] #Eliminating an element out of index just displays the whole vector
 z[20]  # Out of index access gives NA
 
+zero <- z[0]
+zero          #integer(0)
+
 #Differeny way of element access
 MyFirstVector[1:3]
 z[4:7]

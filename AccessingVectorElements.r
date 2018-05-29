@@ -18,3 +18,6 @@ z[c(8,11,12)]
 z[c(-2,-5)]
 z[-3:-6]
 z[-1:1] #Error in z[-1:1] : only 0's may be mixed with negative subscripts
+
+z[seq(2,5)]
+z[rep(3,5)] # [1] 3 3 3 3 3

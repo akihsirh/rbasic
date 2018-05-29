@@ -59,6 +59,8 @@ seq(1,15)
 z<- seq(1,15,4)
 z
 
+z1 <- seq(20,35,6)
+z1
 #replicate function rep() -> repeats a number,character or vector n number of times
 rep1 <- rep(6,21)
 rep1

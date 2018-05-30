@@ -65,6 +65,13 @@ z1
 z2 <- seq(20:30)
 z2
 
+z3 <- seq(from=35, to = 55, length.out = 15)
+z3
+
+seqlen <- c("q", "w","e","r","t","y")
+z4 <- seq(from=35, to = 55, along.with = seqlen)
+z4
+
 #replicate function rep() -> repeats a number,character or vector n number of times
 rep1 <- rep(6,21)
 rep1
@@ -75,4 +82,8 @@ repc
 repv <- rep(c(3,4),10)
 repv
 
+repseq1 <- rep(5:6,times = 10)
+repseq1
 
+repseq2 <- rep(5:6,each = 10)
+repseq2

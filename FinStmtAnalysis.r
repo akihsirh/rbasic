@@ -5,11 +5,11 @@ expenses <- c(12051.82, 5695.07, 12319.20, 12089.72, 8658.57, 840.20, 3285.73, 5
 #Solution
 #Profit for each month
 monthly_profit <- round(revenue - expenses,2)
-print(paste(c("Monthly profit: ",round(monthly_profit)), collapse = "  "))
+print(paste(c("Monthly profit: ",round(monthly_profit/1000,0)), collapse = "  "))
 
 #Profit after tax
-monthly_profit_after_tax <- round(revenue * 0.7 - expenses,2)
-print(paste(c("Monthly profit after tax: ",round(monthly_profit_after_tax)), collapse = "  "))
+monthly_profit_after_tax <- round((revenue- expenses) * 0.7,2)
+print(paste(c("Monthly profit after tax: ",round(monthly_profit_after_tax/1000,0)), collapse = "  "))
 
 #profit margin for each month - profit after tax divided by revenue
 profit_margin <- round(monthly_profit_after_tax/revenue * 100,2)

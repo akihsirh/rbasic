@@ -55,4 +55,11 @@ for(i in 1:N){
 #vectorized multiplication
 u <- r * s
 
+#Use vectors as function input
+repseq1 <- rep(5:6,times = 10)
+repseq1
+
+b <- sqrt(repseq1)
+b
+
 # vectorized operations are faster than devectorized in R

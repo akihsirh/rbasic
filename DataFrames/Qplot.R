@@ -20,3 +20,5 @@ qplot(data = stats, x= Income.Group, y= Birth.rate, size = 10)
 qplot(data = stats, x= Income.Group, y= Birth.rate, size = I(3))
 qplot(data = stats, x= Income.Group, y= Birth.rate,
       color = I("blue"), geom = "boxplot")
+
+

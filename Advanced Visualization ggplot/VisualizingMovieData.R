@@ -87,3 +87,41 @@ r + geom_point(size = 3)
 ## when we use a setting value in aesthetic/mapping then R considers it as a categorical
 # variable rather than just a physical setting such simple colour of data point or size
 # based on simple values like red or 4
+
+
+#--------Histogram and density charts
+
+histData <- ggplot(data= movieData, aes(x=BudgetMillions))
+
+#Create histogram
+histData + geom_histogram(binwidth = 15)
+
+#Add colour acc to category and give it a border
+histData + geom_histogram(binwidth = 10, aes(fill=Genre), colour = "Black")
+
+#Density charts - illustrate the probability density chart
+histData + geom_density()
+histData + geom_density(aes(fill=Genre), position = "Stack")
+
+#----------- Layer tips
+layerData <- ggplot(data = movieData, aes(x= AudienceRating))
+
+layerData + geom_histogram(binwidth = 10, fill="White", colour="Blue")
+
+#Another way to represent the above illustration
+layerData <- ggplot(data = movieData)
+
+layerData + geom_histogram(binwidth = 10 , aes(x= AudienceRating),
+                           fill="White", colour="Blue")
+
+# You can use the second way when you are going to use the same dataset over and 
+# over but for different charts. This helps seperate the aesthetics and mappings
+# from the data object to the layers. So if we want to represent critic rating on 
+# the x axis then all we need to change is the aes in the histogram part not the data
+# object
+
+layerData + geom_histogram(binwidth = 10 , aes(x= CriticRating),
+                           fill="White", colour="Blue")
+
+
+
